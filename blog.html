@@ -3,18 +3,21 @@ permalink: /blog/
 layout: default
 ---
 <div style="height: 60px;"></div>
-<div class="container mt-5">
+
+<div class="container">
     {% for post in site.posts %}
-    <div class="row text-start">
-        <div class="col-md-4 px-5">
-            <img class="img-fluid rounded" src="{{ post.image }}" />
-        </div>
-        <div class="col-md-8">
-            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-            <br>
-            {{ post.excerpt }}
-            <a href="{{ post.url }}">Read more ...</a>
+    <div class="text-start my-5">
+        <div class="row p-0">
+            <div class="col-md-4 rounded-start-4" style="background: url('{{ post.image }}') center no-repeat; background-size: cover"></div>
+            <div class="col-md-8 py-4 px-5 rounded-end-4" style="background-color: #f7f7f7">
+                <a style="text-decoration: none" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                <br>
+                {{ post.excerpt }}
+                <a style="float: right" href="{{ post.url }}">Read more ...</a>
+            </div>
         </div>
     </div>
     {% endfor %}
 </div>
+
+<div style="height: 60px;"></div>

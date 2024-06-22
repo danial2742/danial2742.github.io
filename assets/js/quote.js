@@ -406,6 +406,10 @@ let quotes = [
     {
         "quote": "If you can dream it, you can achieve it.",
         "author": "Zig Ziglar"
+    },
+    {
+        "quote": "The will of man is his happiness.",
+        "author": "Friedrich Schiller"
     }
 ];
 

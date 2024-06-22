@@ -1,0 +1,20 @@
+---
+permalink: /blog/
+layout: default
+---
+<div style="height: 60px;"></div>
+<div class="container mt-5">
+    {% for post in site.posts %}
+    <div class="row text-start">
+        <div class="col-md-4 px-5">
+            <img class="img-fluid rounded" src="{{ post.image }}" />
+        </div>
+        <div class="col-md-8">
+            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            <br>
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">Read more ...</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -6,7 +6,7 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - .:/app
+      - ./:/app
     stdin_open: true
     tty: true
-    command: bundle exec jekyll serve -H 0.0.0.0 -t
+    command: bundle exec jekyll serve --watch -H 0.0.0.0 -t

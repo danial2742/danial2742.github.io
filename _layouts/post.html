@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="text-center h-100 w-100 d-flex flex-column justify-content-center" style="background-image: url('{{ page.image }}'); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <h3 class="text-light">{{ page.title }}</h3>
+    <br>
+    <p class="text-light">{{ page.subtitle }}</p>
+</div>
+
+<div class="container my-5">
+    <article class="py-5">
+        {{ content }}
+    </article>
+</div>

@@ -24,3 +24,12 @@ h1, h2, h3, h4, h5, h6, span, blockquote {
 .contact-icon:hover {
     opacity: 0.6;
 }
+
+.index-contact-icon {
+    font-size: 1rem;
+    transition: opacity 0.2s;
+}
+
+.index-contact-icon:hover {
+    opacity: 0.6;
+}
